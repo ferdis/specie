@@ -24,7 +24,7 @@ $> git clone https://github.com/uitgewis/specie.git
 $> cd specie && composer install --prefer-dist && cd -  
 
 # Configure environment
-$> vim specie/.env
+$> cp specie/.env.example specie/.env; vim specie/.env
 
 # Run database seed and migrations
 $> php specie/artisan migrate
@@ -63,3 +63,9 @@ Uri               |  Verb | Description
 * Kenyan Shilling (KES)
 
 
+
+## Tests
+Test can be run through PHPUnit
+```bash
+$> phpunit tests/
+```
