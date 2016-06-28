@@ -1,4 +1,5 @@
 # Specie
+[![Build Status](https://travis-ci.org/uitgewis/specie.svg?branch=master)](https://travis-ci.org/uitgewis/specie)
 
 Specie is an API for exchanging currencies.
 
