@@ -1,8 +1,7 @@
-# Specie
-[![Build Status](https://travis-ci.org/uitgewis/specie.svg?branch=master)](https://travis-ci.org/uitgewis/specie)
+# Specie [![Build Status](https://travis-ci.org/uitgewis/specie.svg?branch=master)](https://travis-ci.org/uitgewis/specie)
+
 
 Specie is an API for exchanging currencies.
-
 
 ## Requirements
 
@@ -11,10 +10,6 @@ Specie is an API for exchanging currencies.
 * nginx (>= 1.10)
 * Redis (>= 3.2)
 * Debian (= 8.x)
-
-
---------------------------------------------------------------------------------
-
 
 ## Installation
 ```bash
@@ -43,10 +38,6 @@ $> curl -s http://specie.dev
 {"status":"ok","version":"Lumen (5.2.7) (Laravel Components 5.2.*)"}
 ```
 
-
---------------------------------------------------------------------------------
-
-
 ## API Overview
 
 **Note: All currency valuations are relative to the South African Rand (ZAR).**
@@ -62,8 +53,6 @@ Uri               |  Verb | Description
 * British Pound (GBP)
 * Euro (EUR)
 * Kenyan Shilling (KES)
-
-
 
 ## Tests
 Test can be run through PHPUnit
