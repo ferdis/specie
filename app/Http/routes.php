@@ -20,6 +20,7 @@ $app->get('/', function () use ($app) {
 });
 
 // Currency valuations
+$app->get('/currency', 'CurrencyController@getAll');
 $app->get('/currency/{code}', 'CurrencyController@getIndex');
 
 // Exchange currency

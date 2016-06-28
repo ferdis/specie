@@ -22,6 +22,9 @@ $> cd specie && composer install --prefer-dist && cd -
 # Configure environment
 $> cp specie/.env.example specie/.env; vim specie/.env
 
+# Create database
+$> mysql -uroot -e 'create database specie;'
+
 # Run database seed and migrations
 $> php specie/artisan migrate
 
@@ -45,7 +48,7 @@ $> curl -s http://specie.dev
 Uri               |  Verb | Description 
 :---------------- | :---: | :-------------------------------------
 /                 |  GET  | Status and version information
-/currency/{code}  |  GET  | Currency valuations
+/currency/{code?}  |  GET  | Currency valuations
 /exchange         |  POST | Exchange currency
 
 **Suppoted Currencies**
