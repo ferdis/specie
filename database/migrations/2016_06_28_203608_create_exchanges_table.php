@@ -21,8 +21,8 @@ class CreateExchangesTable extends Migration
 	    $table->bigInteger('amount_purchased');
 	    $table->bigInteger('amount_paid');
 	    $table->bigInteger('surcharge_amount');
-
 	    $table->integer('surcharge_percentage');
+	    $table->integer('discount');
             $table->timestamps();
         });
     }

@@ -14,9 +14,9 @@
 // Version and availability
 $app->get('/', function () use ($app) {
     return response()->json([ 
-		'status' => 'ok',
-		'version' => app()->version(),
-	]);
+        'status' => 'ok',
+        'version' => app()->version(),
+    ]);
 });
 
 // Currency valuations
@@ -24,4 +24,4 @@ $app->get('/currency', 'CurrencyController@getAll');
 $app->get('/currency/{code}', 'CurrencyController@getIndex');
 
 // Exchange currency
-$app->post('/exchange', 'OrderController@postIndex');
+$app->post('/exchange', 'ExchangeController@postExchange');
