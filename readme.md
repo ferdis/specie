@@ -12,6 +12,7 @@ Specie is an API for exchanging currencies.
 * nginx (>= 1.10)
 * Redis (>= 3.2)
 * Debian (= 8.x)
+* sendmail
 
 ## Installation
 ```bash
