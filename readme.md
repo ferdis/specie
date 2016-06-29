@@ -35,8 +35,8 @@ $> php specie/artisan migrate
 $> sudo echo -e"127.0.1.1\tspecie.dev" >> /etc/hosts        
 
 # Edit, link and reload
-$> vim specie/etc/nginx/specie.dev && \
-   cp specie/etc/nginx/specie.dev /etc/nginx/sites-enabled && \
+$> vim specie/etc/specie.dev && \
+   cp specie/etc/specie.dev /etc/nginx/sites-enabled && \
    systemctl reload nginx
 
 # Win! 🎉 Have a beer 🍻
