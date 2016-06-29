@@ -3,6 +3,8 @@
 
 Specie is an API for exchanging currencies.
 
+> **NOTE** This is not a real thing. 
+
 ## Requirements
 
 * PHP (>= 5.6)
@@ -58,7 +60,7 @@ Uri               |  Verb | Description
 * Kenyan Shilling (KES)
 
 ## Tests
-Test can be run through PHPUnit
+Tests can be run through PHPUnit :tada: :tada: :tada:
 ```bash
 $> phpunit tests/
 ```
