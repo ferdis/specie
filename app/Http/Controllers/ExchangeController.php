@@ -25,7 +25,7 @@ class ExchangeController extends Controller
 			],
                         [ 
 				'currency' => 'required|in:usd,gbp,eur,kes', 
-				'amount' => 'required|integer|min:0'
+				'amount' => 'required|min:0'
 			]
                 );
 
@@ -57,7 +57,7 @@ class ExchangeController extends Controller
 		// Some IFTT things need to change this data (Visitor?)
 		if ($discount = (int) $this->getDiscountPercentage($currency)) 
 		{
-			$order->amount_paid = $order->amount_paid * (1 + ($discount / 100));
+			$order->amount_paid = $order->amount_paid * ((100 - $discount) / 100);
 		}
 
 		$order->save();
