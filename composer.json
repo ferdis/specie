@@ -9,7 +9,6 @@
         "laravel/lumen-framework": "5.2.*",
         "vlucas/phpdotenv": "~2.2",
         "phpunit/phpunit": "^5.4",
-        "illuminate/redis": "^5.2",
         "guzzlehttp/guzzle": "^6.2",
         "predis/predis": "^1.1",
         "illuminate/redis": "^5.2"
